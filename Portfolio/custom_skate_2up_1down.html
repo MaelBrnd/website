@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customs de skate</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .custom-container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #fdfdfd;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .custom-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .carousel-layout {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .carousel-card {
+      width: 360px;
+    }
+
+    .carousel-wrapper {
+      position: relative;
+      overflow: hidden;
+      width: 300px;
+      height: 480px; /* Hauteur fixe pour la première image (verticale) */
+      margin-bottom: 0.5rem;
+    }
+
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.3s ease;
+      height: 100%;
+    }
+
+    .carousel-image {
+      width: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Première image : verticale */
+    .carousel-image.vertical {
+      height: 480px;
+    }
+
+    /* Images suivantes : carrées */
+    .carousel-image.square {
+      height: 300px;
+    }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.6);
+      color: white;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0.4rem 0.8rem;
+      z-index: 2;
+    }
+
+    .carousel-btn.prev { left: 5px; }
+    .carousel-btn.next { right: 5px; }
+
+    .carousel-caption {
+      font-size: 0.95rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1> </h1>
+    <a class="logo-linkedin" href="https://www.linkedin.com/in/ma%C3%ABl-bernard-7ba677249/" target="_blank" title="Voir mon LinkedIn">
+            <img src="../image/linkdin_logo.jpg" alt="LinkedIn">
+    </a>
+    <a class="logo-home" href="../index.html" title="Retour à l’accueil">
+            <img src="../image/MB.png" alt="Accueil">
+        </a>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../about.html">À propos</a></li>
+        <li><a href="../experience_pro.html">Expérience</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../#">Journal visuel</a></li>
+      </ul>
+    </nav>
+    <h1>Mes customs de skate</h1>
+  </header>
+
+  <main>
+    <div class="custom-container">
+      <section class="custom-section">
+        <h2>Pourquoi ces customs ?</h2>
+        <p>Je récupère des planches de skate qui ne servent plus ou ne roulent plus, et je leur donne une seconde vie. Que ce soit pour rouler à nouveau ou en tant qu’éléments de décoration. C’est à la fois un projet créatif, durable et personnel.</p>
+      </section>
+
+      <section class="custom-section">
+        <h2>Étapes de transformation</h2>
+        <ul>
+          <li>Sélection de planches usées ou cassées</li>
+          <li>Retrait du grip ou nettoyage de celui-ci selon l’état</li>
+          <li>Nettoyage complet de la planche</li>
+          <li>Démontage et nettoyage des roues, trucks, vis</li>
+          <li>Ponçage intégral du dessous de la planche</li>
+          <li>Travail du bois (si nécessaire) pour redonner une forme propre aux contours</li>
+          <li>Création du design avec bombe, acrylique, croquis, pochoir ou peinture libre</li>
+        </ul>
+      </section>
+      <section class="custom-section">
+        <h2>En images : nettoyage & préparation</h2>
+        <div class="carousel-card" style="margin: 0 auto;">
+          <div class="carousel-wrapper" style="height: 300px;">
+            <button class="carousel-btn prev" onclick="slide(-1, 3)">&#10094;</button>
+            <div class="carousel-track" id="track-3">
+              <img class="carousel-image square" src="/Portfolio/image_skate/trucks.jpg" alt="Retrait et nettoyage des trucks, roues, vis etc">
+              <img class="carousel-image square" src="/Portfolio/image_skate/poncage.jpg" alt="Ponçage bois">
+            </div>
+            <button class="carousel-btn next" onclick="slide(1, 3)">&#10095;</button>
+          </div>
+          <p class="carousel-caption">Quelques étapes de remise en état avant la customisation.</p>
+        </div>
+      </section>
+    </div>
+    <div class="custom-container">
+      <section class="custom-section">
+        <h2>Quelques réalisations</h2>
+
+        <div class="carousel-layout">
+          <!-- Réalisation 1 -->
+          <div class="carousel-card">
+            <div class="carousel-wrapper">
+              <button class="carousel-btn prev" onclick="slide(-1, 0)">&#10094;</button>
+              <div class="carousel-track" id="track-0">
+                <img class="carousel-image vertical" src="/Portfolio/image_skate/2.png" alt="Skate Entropy">
+                <img class="carousel-image square" src="/Portfolio/image_skate/1 2.png" alt="Skate Entropy Detail">
+              </div>
+              <button class="carousel-btn next" onclick="slide(1, 0)">&#10095;</button>
+            </div>
+            <p class="carousel-caption"><strong>Thème : Physique</strong><br>Minimaliste autour du mot "entropy".</p>
+          </div>
+
+          <!-- Réalisation 2 -->
+          <div class="carousel-card">
+            <div class="carousel-wrapper">
+              <button class="carousel-btn prev" onclick="slide(-1, 1)">&#10094;</button>
+              <div class="carousel-track" id="track-1">
+                <img class="carousel-image vertical" src="/Portfolio/image_skate/1.png" alt="Skate Vague Style Hokusai">
+                <img class="carousel-image square" src="/Portfolio/image_skate/DJI_20241212155417_0127_D.JPG" alt="Skate Vague Detail">
+                <img class="carousel-image square" src="/Portfolio/image_skate/2 2.png" alt="Skate Vague Detail">
+              </div>
+              <button class="carousel-btn next" onclick="slide(1, 1)">&#10095;</button>
+            </div>
+            <p class="carousel-caption"><strong>Thème : Glisse</strong><br>Vagues inspirées de La Vague d’Hokusai.</p>
+          </div>
+        </div>
+
+        <!-- Réalisation 3, seule en dessous -->
+        <div class="carousel-layout" style="margin-top: 2rem;">
+          <div class="carousel-card">
+            <div class="carousel-wrapper">
+              <button class="carousel-btn prev" onclick="slide(-1, 2)">&#10094;</button>
+              <div class="carousel-track" id="track-2">
+                <img class="carousel-image vertical" src="/Portfolio/image_skate/3.png" alt="Skate Musique">
+                <img class="carousel-image square" src="/Portfolio/image_skate/DJI_20250525092437_0270_D.JPG" alt="Skate Musique Detail">
+              </div>
+              <button class="carousel-btn next" onclick="slide(1, 2)">&#10095;</button>
+            </div>
+            <p class="carousel-caption"><strong>Thème : Musique</strong><br>Mélange piano et guitare.</p>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p style="text-align: center;">&copy; 2025</p>
+  </footer>
+
+  <script>
+    const indices = [0, 0, 0, 0];
+
+    function slide(direction, galleryIndex) {
+      const track = document.getElementById("track-" + galleryIndex);
+      const images = track.querySelectorAll(".carousel-image");
+      const width = 300;
+      indices[galleryIndex] = Math.max(0, Math.min(indices[galleryIndex] + direction, images.length - 1));
+      const offset = -indices[galleryIndex] * width;
+      track.style.transform = "translateX(" + offset + "px)";
+    }
+  </script>
+</body>
+</html>

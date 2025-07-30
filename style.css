@@ -1,0 +1,287 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    background-color: #000000;
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #000000;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #f9f9f9;
+    color: #000000;
+    border-top: 1px solid #e0e0e0;
+}
+
+.experience-bloc {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+    max-width: 100%;
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    border-left: 5px solid #000000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    border-radius: 10px;
+    min-height: 220px;
+    width: 100%;
+}
+
+.experience-card img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+}
+
+.experience-text {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experience-text h3 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: #000000;
+}
+
+.experience-text h4 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.en-savoir-plus {
+    display: inline-block;
+    margin-top: 0.8rem;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border 0.2s ease;
+}
+
+.en-savoir-plus:hover {
+    border-bottom: 1px solid #000000;
+}
+
+.experience-detail {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-left: 4px solid #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+
+.experience-detail h3 {
+    margin-top: 1.5rem;
+    color: #000000;
+}
+
+.logo-home {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.logo-home img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+
+.logo-linkedin {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.logo-linkedin img {
+    height: 42px;
+    width: 42px;
+     object-fit: contain;
+}
+
+.cv-link {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.cv-link a {
+    background-color: #000;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.2s ease;
+}
+
+.cv-link a:hover {
+    background-color: #333;
+}
+
+.machine-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.machine {
+    width: 260px;
+    text-align: center;
+}
+
+.machine img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-links img {
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.portfolio-links a:hover img {
+  transform: scale(1.1);
+}
+
+.callout-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.callout-container img {
+  width: 300px;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.callout-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.callout-text h3 {
+  margin-top: 0;
+}
+
+.callout-text .en-savoir-plus {
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+
+.affiche-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.affiche-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.affiche-item:hover {
+  transform: scale(1.02);
+}
+
+.affiche-item img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 0.5rem;
+}
+
+.affiche-item p {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0;
+}
