@@ -101,16 +101,29 @@
 
       <h3>Missions principales</h3>
       <ul>
-        <li>Développement d’un algorithme de suivi de l’aiguille à partir de projections 2D</li>
-        <li>Création d’une interface de visualisation interactive des frames (OpenCV, Python)</li>
-        <li>Interpolation semi-supervisée pour gagner du temps dans la détection</li>
+        <li>Améliorer la détection des spectres de diffraction problématique</li>
+          <ul>
+            <li>Identifier automatiquement les sepctres de mauvaise qualité à partir de l'image brute</li>
+            <li>Classifier les problématiques de spectres rencontrées (discontinuités dans les anneaux, "spottiness", faible signnal, artefacts)</li>
+          </ul>
+        <li>Structure et améliorer le code d'analyse existant</li>
+          <ul>
+            <li>Refactoring : suppression des duplications, organisation modulaire</li>
+          </ul>
+        <li>Adapter les outils aux différents environnements de mesure</li>
+          <ul>
+            <li>Chargement et intégration des fichier provenant de l'ESRF</li>
+            <li>Chargement et intégration des fichier provenant de la SLS</li>
+          </ul>
+        <li>Création d'un script d'automatisation de l'ajustement de l'aiguille lors des expériences de tomographie à l'ESRF/li>
         <li>Redressement numérique des volumes reconstruits (correction d’inclinaison, courbures)</li>
         <li>Extraction automatique de vues orthogonales optimisées pour analyse</li>
+        <li>Création de rapport, résultat des recherches, et guides d'utilisation des outils développés pour assurer la transmission à l'équipe</li>
       </ul>
 
       <h3>Outils utilisés</h3>
       <p>
-        Python, OpenCV, NumPy, Matplotlib, Git, Jupyter, tomographie industrielle, synchrotron, haute performance computing
+        Python, OpenCV, NumPy, Matplotlib, Git, Jupyter, tomographie industrielle, synchrotron, haute performance computing, FIJI
       </p>
 
       <h3>Ce que j'en retiens</h3>
