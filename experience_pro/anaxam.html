@@ -6,6 +6,19 @@
   <title>Stage chez ANAXAM</title>
   <link rel="stylesheet" href="../style.css">
 </head>
+<script>
+  let index = 0;
+
+  function slide(direction) {
+    const track = document.getElementById('carousel-track');
+    const images = track.querySelectorAll('img');
+    const total = images.length;
+    const imgWidth = images[0].clientWidth + 16; // including margin
+    index = (index + direction + total) % total;
+    track.style.transform = `translateX(-${index * imgWidth}px)`;
+  }
+</script>
+
 <body>
   <header>
     <h1> </h1>
