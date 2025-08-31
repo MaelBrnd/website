@@ -287,15 +287,19 @@ footer {
 }
 
 .gallery-section {
+  max-width: 1100px;
+  margin: 3rem auto;
   text-align: center;
-  margin-top: 3rem;
 }
 
 .carousel-container {
   position: relative;
-  max-width: 700px;
-  margin: 0 auto;
   overflow: hidden;
+}
+
+.carousel-track-wrapper {
+  overflow: hidden;
+  width: 100%;
 }
 
 .carousel-track {
@@ -304,12 +308,12 @@ footer {
 }
 
 .carousel-image {
-  width: 100%;
-  flex-shrink: 0;
-  max-height: 400px;
+  width: 25%; /* 4 images visibles */
+  height: auto;
   object-fit: cover;
-  border-radius: 8px;
-  margin-right: 1rem;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 6px;
 }
 
 .carousel-btn {
@@ -319,11 +323,17 @@ footer {
   background-color: rgba(0,0,0,0.6);
   color: white;
   border: none;
-  font-size: 2rem;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
   z-index: 2;
+  border-radius: 4px;
 }
 
-.carousel-btn.prev { left: 10px; }
-.carousel-btn.next { right: 10px; }
+.carousel-btn.prev {
+  left: 0;
+}
+
+.carousel-btn.next {
+  right: 0;
+}
