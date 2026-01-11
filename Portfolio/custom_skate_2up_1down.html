@@ -162,56 +162,82 @@
         </div>
       </section>
     </div>
-    <div class="custom-container">
-      <section class="custom-section">
-        <h2>Quelques réalisations</h2>
 
-        <div class="carousel-layout">
-          <!-- Réalisation 1 -->
-          <div class="carousel-card">
-            <div class="carousel-wrapper">
-              <button class="carousel-btn prev" onclick="slide(-1, 0)">&#10094;</button>
-              <div class="carousel-track" id="track-0">
-                <img class="carousel-image vertical" src="image_skate/2.png" alt="Skate Entropy">
-                <img class="carousel-image square" src=image_skate/1 2.png" alt="Skate Entropy Detail">
-              </div>
-              <button class="carousel-btn next" onclick="slide(1, 0)">&#10095;</button>
-            </div>
-            <p class="carousel-caption"><strong>Thème : Physique</strong><br>Minimaliste autour du mot "entropy".</p>
+<div class="custom-container">
+  <section class="custom-section">
+    <h2>Quelques réalisations</h2>
+
+    <div class="carousel-layout">
+
+      <!-- Réalisation 0 -->
+      <div class="carousel-card" data-carousel="0">
+        <div class="carousel-wrapper">
+          <button class="carousel-btn prev" onclick="slide(-1, 0)">&#10094;</button>
+
+          <div class="carousel-track" id="track-0">
+            <img class="carousel-image vertical" src="image_skate/Einstein/planche_casquette.JPG" alt="Skate Einstein">
+            <img class="carousel-image square" src="image_skate/Einstein/Planche_rail_dos.JPG" alt="Skate Einstein détail">
           </div>
 
-          <!-- Réalisation 2 -->
-          <div class="carousel-card">
-            <div class="carousel-wrapper">
-              <button class="carousel-btn prev" onclick="slide(-1, 1)">&#10094;</button>
-              <div class="carousel-track" id="track-1">
-                <img class="carousel-image vertical" src="image_skate/1.png" alt="Skate Vague Style Hokusai">
-                <img class="carousel-image square" src="image_skate/DJI_20241212155417_0127_D.JPG" alt="Skate Vague Detail">
-                <img class="carousel-image square" src="image_skate/2 2.png" alt="Skate Vague Detail">
-              </div>
-              <button class="carousel-btn next" onclick="slide(1, 1)">&#10095;</button>
-            </div>
-            <p class="carousel-caption"><strong>Thème : Glisse</strong><br>Vagues inspirées de La Vague d’Hokusai.</p>
-          </div>
+          <button class="carousel-btn next" onclick="slide(1, 0)">&#10095;</button>
         </div>
+        <p class="carousel-caption"><strong>Thème : Physique</strong><br>Custom autour d’Einstein.</p>
+      </div>
 
-        <!-- Réalisation 3, seule en dessous -->
-        <div class="carousel-layout" style="margin-top: 2rem;">
-          <div class="carousel-card">
-            <div class="carousel-wrapper">
-              <button class="carousel-btn prev" onclick="slide(-1, 2)">&#10094;</button>
-              <div class="carousel-track" id="track-2">
-                <img class="carousel-image vertical" src="image_skate/3.png" alt="Skate Musique">
-                <img class="carousel-image square" src="image_skate/DJI_20250525092437_0270_D.JPG" alt="Skate Musique Detail">
-              </div>
-              <button class="carousel-btn next" onclick="slide(1, 2)">&#10095;</button>
-            </div>
-            <p class="carousel-caption"><strong>Thème : Musique</strong><br>Mélange piano et guitare.</p>
+      <!-- Réalisation 1 -->
+      <div class="carousel-card" data-carousel="1">
+        <div class="carousel-wrapper">
+          <button class="carousel-btn prev" onclick="slide(-1, 1)">&#10094;</button>
+
+          <div class="carousel-track" id="track-1">
+            <img class="carousel-image vertical" src="image_skate/2.png" alt="Skate Entropy">
+            <img class="carousel-image square" src="image_skate/1_2.png" alt="Skate Entropy détail">
           </div>
-        </div>
 
-      </section>
+          <button class="carousel-btn next" onclick="slide(1, 1)">&#10095;</button>
+        </div>
+        <p class="carousel-caption"><strong>Thème : Physique</strong><br>Minimaliste autour du mot "entropy".</p>
+      </div>
+
+      <!-- Réalisation 2 -->
+      <div class="carousel-card" data-carousel="2">
+        <div class="carousel-wrapper">
+          <button class="carousel-btn prev" onclick="slide(-1, 2)">&#10094;</button>
+
+          <div class="carousel-track" id="track-2">
+            <img class="carousel-image vertical" src="image_skate/1.png" alt="Skate Vague style Hokusai">
+            <img class="carousel-image square" src="image_skate/DJI_20241212155417_0127_D.JPG" alt="Skate Vague détail">
+            <img class="carousel-image square" src="image_skate/2_2.png" alt="Skate Vague détail 2">
+          </div>
+
+          <button class="carousel-btn next" onclick="slide(1, 2)">&#10095;</button>
+        </div>
+        <p class="carousel-caption"><strong>Thème : Glisse</strong><br>Vagues inspirées de La Vague d’Hokusai.</p>
+      </div>
+
     </div>
+
+    <!-- Réalisation 3 -->
+    <div class="carousel-layout" style="margin-top: 2rem;">
+      <div class="carousel-card" data-carousel="3">
+        <div class="carousel-wrapper">
+          <button class="carousel-btn prev" onclick="slide(-1, 3)">&#10094;</button>
+
+          <div class="carousel-track" id="track-3">
+            <img class="carousel-image vertical" src="image_skate/3.png" alt="Skate Musique">
+            <img class="carousel-image square" src="image_skate/DJI_20241212155417_0127_D.JPG" alt="Skate Musique détail">
+            <img class="carousel-image square" src="image_skate/3_2.png" alt="Skate Musique détail">
+          </div>
+
+          <button class="carousel-btn next" onclick="slide(1, 3)">&#10095;</button>
+        </div>
+        <p class="carousel-caption"><strong>Thème : Musique</strong><br>Mélange piano et guitare.</p>
+      </div>
+    </div>
+
+  </section>
+</div>
+
     <div style="text-align: center; margin-top: 3rem;">
       <a href="https://entropyboards.github.io/website/index.html" target="_blank"
         style="
