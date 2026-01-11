@@ -340,3 +340,21 @@ footer {
 .carousel-btn.next {
   right: 0;
 }
+
+.experience-detail-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.experience-detail-text {
+    flex: 1;
+}
+
+.experience-detail-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
