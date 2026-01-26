@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accès protégé – Ressources projet BE</title>
+  <script>
+    const password = prompt("Entrez le mot de passe pour accéder à cette page :");
+    if (password !== "ensma") {
+      alert("Mot de passe incorrect.");
+      window.location.href = "../index.html";
+    }
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      margin-top: 1rem;
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 0.6rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔒 Section privée – Projet BE</h1>
+    <p>
+      Cette section regroupe l’ensemble des fichiers liés au projet de Bureau d’Études
+      Cette section a été notamment conçues afin d'alléger le rapport et de donner un accès aux fichiers utilisés.
+      <strong>sur la prédiction du comportement mécanique des polycristaux</strong> à l’aide d’un modèle d’intelligence artificielle.
+    </p>
+
+    <p>Elle contient notamment :</p>
+    <ul>
+      <li>Les notebooks Jupyter développés pour le traitement des données et l'entraînement du modèle d’IA</li>
+      <li>Les analyses de corrélation entre descripteurs microstructuraux et réponses mécaniques</li>
+      <li>Des fichiers HTML utilisés pour la visualisation des résultats</li>
+      <li>Les scripts d’apprentissage automatique (régression, RandomForest, etc.)</li>
+    </ul>
+
+    <p style="margin-top: 2rem;">
+      Ressources sont destinées à un usage interne au cadre du projet BE de l’ISAE-ENSMA.
+    </p>
+  </div>
+</body>
+</html>
