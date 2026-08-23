@@ -358,3 +358,277 @@ footer {
     object-fit: cover;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
+
+/* ===================================================== */
+/* NOTES & REFLEXIONS                                    */
+/* ===================================================== */
+
+
+.notes-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.5rem;
+
+    margin-top: 2.5rem;
+
+}
+
+
+
+/* Carte d'un mini-article */
+
+.note-card {
+
+    background-color: #ffffff;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 430px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+/* Léger mouvement au passage de la souris */
+
+.note-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+
+}
+
+
+
+/* ===================================================== */
+/* IMAGE                                                 */
+/* ===================================================== */
+
+
+.note-image {
+
+    position: relative;
+
+    height: 210px;
+
+    overflow: hidden;
+
+}
+
+
+.note-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform 0.4s ease;
+
+}
+
+
+.note-card:hover .note-image img {
+
+    transform: scale(1.04);
+
+}
+
+
+
+/* ===================================================== */
+/* CATÉGORIE                                             */
+/* ===================================================== */
+
+
+.note-category {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 20px;
+
+    background-color: #000000;
+
+    color: #ffffff;
+
+    padding: 0.65rem 1.1rem;
+
+    font-size: 0.85rem;
+
+    font-weight: bold;
+
+}
+
+
+
+/* ===================================================== */
+/* DATE                                                  */
+/* ===================================================== */
+
+
+.note-date {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    background-color: rgba(0,0,0,0.80);
+
+    color: #ffffff;
+
+    padding: 0.45rem 0.9rem;
+
+    font-size: 0.85rem;
+
+    font-weight: bold;
+
+}
+
+
+
+/* ===================================================== */
+/* CONTENU                                               */
+/* ===================================================== */
+
+
+.note-content {
+
+    padding: 1.4rem;
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.note-content h3 {
+
+    margin-top: 0;
+
+    margin-bottom: 1rem;
+
+    font-size: 1.35rem;
+
+    line-height: 1.3;
+
+    color: #000000;
+
+}
+
+
+.note-content p {
+
+    margin-top: 0;
+
+    line-height: 1.55;
+
+    color: #444444;
+
+    flex: 1;
+
+}
+
+
+
+/* ===================================================== */
+/* BOUTON LIRE                                           */
+/* ===================================================== */
+
+
+.note-more {
+
+    align-self: flex-end;
+
+    margin-top: 1.5rem;
+
+    color: #000000;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding: 0.5rem 0;
+
+    border-bottom: 2px solid transparent;
+
+    transition:
+        border 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.note-more:hover {
+
+    border-bottom: 2px solid #000000;
+
+    transform: translateX(3px);
+
+}
+
+
+
+/* ===================================================== */
+/* TABLETTE                                              */
+/* ===================================================== */
+
+
+@media (max-width: 950px) {
+
+    .notes-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+
+/* ===================================================== */
+/* MOBILE                                                */
+/* ===================================================== */
+
+
+@media (max-width: 650px) {
+
+    .notes-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .note-image {
+
+        height: 220px;
+
+    }
+
+}
